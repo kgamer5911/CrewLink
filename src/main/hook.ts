@@ -31,7 +31,7 @@ const store = new Store<ISettings>();
 
 async function loadOffsets(event: Electron.IpcMainEvent): Promise<IOffsets | undefined> {
 
-	const valuesFile = resolve((process.env.LOCALAPPDATA || '') + 'Low', 'Innersloth/Among Us/Unity/6b8b0d91-4a20-4a00-a3e4-4da4a883a5f0/Analytics/values');
+	const valuesFile = resolve((process.env.LOCALAPPDATA || '') + 'Low', 'Innersloth/Among Us/Unity/local.cec5b8f54a01ef0479faa5d261208e46/Analytics/values');
 	let version = '';
 	if (existsSync(valuesFile)) {
 		try {
